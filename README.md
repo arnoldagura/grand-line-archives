@@ -22,10 +22,16 @@ Our goal is to create a "Digital Poneglyph"—a permanent, searchable, and highl
 
 Built with the modern "Grand Line" stack for speed, SEO, and scalability:
 
-- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) + [Shadcn/UI](https://ui.shadcn.com/)
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router + Turbopack)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) + Custom Shadcn/UI Components
+  - 🎨 One Piece-themed design system (Ocean Blue, Pirate Purple, Treasure Gold)
+  - 🌓 Seamless dark mode with CSS variables
+  - ✨ Smooth animations and micro-interactions
+  - 📦 Rich component library (Button, Card, Badge, Tabs, Avatar, Input, Separator)
+  - 📱 Responsive mobile-first design
 - **Database & Auth:** [Supabase](https://supabase.com/) (PostgreSQL)
-- **Content:** [Velite](https://velite.js.org/) (Turning MDX files into type-safe data)
+- **Content:** [Velite](https://velite.js.org/) (Type-safe MDX processing)
+- **Icons:** [Lucide React](https://lucide.dev/)
 - **Deployment:** [Vercel](https://vercel.com/)
 
 ---
@@ -41,16 +47,16 @@ Built with the modern "Grand Line" stack for speed, SEO, and scalability:
 
 ## 🚀 Getting Started
 
-First, run the development server:
+First, install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+Then run the development server:
+
+```bash
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
